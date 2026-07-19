@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d75e86729874944bbb987a9efdb786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractibleResource
-  resourceName: Ore
+  item: {fileID: 11400000, guid: 9871105af23f246cb8b1abb1e2d60c69, type: 2}
   amountPerCollect: 1
   useRemaining: 1
   promptText: Press 'E' to interact

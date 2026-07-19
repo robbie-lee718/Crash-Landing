@@ -8,6 +8,8 @@ public class PlayerInteraction : MonoBehaviour
     public float interactionRange = 3f;
     public TextMeshProUGUI promptText;
 
+    public Inventory inventory;
+
     private InteractibleResource currentResource;
     private Animator animator;
     private bool isInteracting;
@@ -60,10 +62,10 @@ public class PlayerInteraction : MonoBehaviour
             return;
         }
 
-        if (currentResource != null)
+        if (currentResource != null && !isInteracting)
         {
             promptText.gameObject.SetActive(true);
-            promptText.text = $"Press 'E' to interact with {currentResource.resourceName}";
+            promptText.text = "Press 'E' to interact";
         }
         else
         {
@@ -99,7 +101,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (currentResource != null)
         {
-            currentResource.Interact();
+            currentResource.Interact(inventory);
         }
 
         yield return new WaitForSeconds(0.3f);
