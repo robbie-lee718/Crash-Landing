@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -58,7 +59,40 @@ public class Inventory : MonoBehaviour
         UpdateUI();
     }
 
+    public int GetItemAmount(string itemName)
+    {
+        if (slots == null)
+        {
+            return 0;
+        }
 
+        int total = 0;
+
+        foreach (InventorySlotData slot in slots)
+        {
+            if (slot == null || slot.item == null)
+            {
+                continue;
+            }
+
+            if (string.Equals(slot.item.itemName, itemName, StringComparison.OrdinalIgnoreCase))
+            {
+                total += slot.amount;
+            }
+        }
+
+        return total;
+    }
+
+    public int GetItemAmount(ItemData item)
+    {
+        if (item == null)
+        {
+            return 0;
+        }
+
+        return GetItemAmount(item.itemName);
+    }
 
     private void UpdateUI()
     {

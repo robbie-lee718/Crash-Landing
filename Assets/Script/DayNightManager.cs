@@ -15,7 +15,7 @@ public class DayNightManager : MonoBehaviour
     private Color dayTint = new Color(0.35f, 0.45f, 0.6f);
     private Color nightTint = new Color(0.005f, 0.0065f, 0.01f);
 
-    private float timeOfDay = 0.25f;
+    private float timeOfDay = 0.5f;
 
     public bool IsNight { get; private set; }
 
