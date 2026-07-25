@@ -1,4 +1,4 @@
-# CrashLanding
+# Crash Landing
 You are an astronaut who crashlanded on a random planet. In order to repair your ship you must collect resources that scattered from your ship during the crash, and other resources from the planet.
 Your mission is to repair your ship and escape the planet before your oxygen runs out.
 
