@@ -4,10 +4,16 @@ Your mission is to repair your ship and escape the planet before your oxygen run
 
 ## Controls
 Walk - wasd
+
 Run - Shift
+
 Jump - Space
+
 Interact - E
+
 Inventory - I
+
+Settings - Esc
 
 ## Objective & How to Play
 Collect the required resources to fix your ship before your oxygen runs out.
